@@ -1,0 +1,193 @@
+/* --black: #000000ff;
+--oxford-blue: #14213dff;
+--orange-web: #fca311ff;
+--platinum: #e5e5e5ff;
+--white: #ffffffff; */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/*[1] 
+Per fare vedere come cambia un pò tutto al cambiare della font-size 
+decommenta questa regola
+html {
+  font-size: 20px;
+} */
+
+/* html {
+  font-size: 20px;
+} */
+
+body {
+  margin: 0;
+  font-family: "EB Garamond", serif;
+}
+
+abbr {
+  text-decoration: none;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a:is(:link, :focus, :hover, :visited, :active) {
+  color: unset;
+  text-decoration: none;
+}
+
+/* HEADER */
+header#main-header {
+  position: relative;
+  min-height: 250px;
+  /* [5] ELIMINATO il background color */
+  /*  background-color: #14213dff; */
+  line-height: 250px;
+  /* [5] AGgiunto il gradiente radiale */
+  background-image: radial-gradient(
+    circle 100px at 50% 50%,
+    #d4d11f4e,
+    #d4d11fcf 80px,
+    rgb(79, 79, 4) 90px,
+    #14213dff
+  );
+}
+
+header#main-header .sistema-solare__title {
+  float: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sistema-solare__title {
+  text-align: center;
+  margin: 0;
+  /* [1]
+  font-size: 40px; */
+  font-size: 2.5rem;
+  color: #14213dff;
+  text-transform: capitalize;
+}
+
+.sistema-solare__title--principale {
+  color: #fca311ff;
+  /* [1]
+  font-size: 60px; */
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  text-shadow: 2px 2px 2px #e5e5e5ff;
+}
+
+/* NAVBAR */
+nav#main-navbar {
+  line-height: 1.2;
+  float: right;
+  margin-top: 220px;
+  margin-right: 15px;
+}
+
+nav#main-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav#main-navbar ul li {
+  display: inline-block;
+  font-size: 1.3em;
+  min-width: 4.5em;
+}
+
+nav#main-navbar .second-level-container {
+  text-align: center;
+}
+
+nav#main-navbar .second-level-container:hover {
+  border: 0.5px solid #e5e5e5ff;
+}
+
+nav#main-navbar > ul > li:hover > a {
+  color: #fca311ff;
+}
+
+nav#main-navbar ul li a {
+  text-decoration: none;
+  display: block;
+  color: #e5e5e5ff;
+  padding: 10px;
+}
+
+/* MENU SECONDO LIVELLO */
+
+nav#main-navbar .second-level-container {
+  position: relative;
+}
+
+nav#main-navbar .second-level-container:hover ul {
+  max-height: 500px;
+  opacity: 1;
+}
+
+nav#main-navbar ul ul {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  outline: 0.5px solid #e5e5e5ff;
+  background-color: #14213dff;
+}
+
+nav#main-navbar ul ul li {
+  display: block;
+  width: 100%;
+  font-size: 0.8em;
+  outline: 0.25px solid #e5e5e5ff;
+}
+
+nav#main-navbar ul ul li:hover a {
+  color: #fca311ff;
+}
+
+nav#main-navbar ul ul li a {
+  text-align: center;
+}
+
+/* MEGA-DROPDOWN-MENU */
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #e5e5e5ff;
+  box-shadow: 0 8px 4px #14213dff, inset 0 -4px 4px #14213dff;
+}
+
+.dropdown-content .column {
+  float: left;
+  width: 33.333333%;
+}
+
+.dropdown-content .column header {
+  text-align: center;
+}
+
+#main-navbar .dropdown-content .column a {
+  color: #fca311ff;
+  text-align: center;
+}

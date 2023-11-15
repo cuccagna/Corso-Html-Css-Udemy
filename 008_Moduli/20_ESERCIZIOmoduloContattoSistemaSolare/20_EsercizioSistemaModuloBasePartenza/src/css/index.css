@@ -1,0 +1,173 @@
+/* --black: #000000ff;
+--oxford-blue: #14213dff;
+--orange-web: #fca311ff;
+--platinum: #e5e5e5ff;
+--white: #ffffffff; */
+
+/* MAIN */
+main {
+  background-color: #e5e5e5ff;
+  padding: 20px;
+}
+
+section.sistema-solare {
+  background-color: #fca311ff;
+  padding: 20px;
+  border: 3px solid #000000ff;
+}
+
+.sistema-solare__body {
+  /* [1]
+  font-size: 19px; */
+  font-size: 1.1875rem;
+
+  line-height: 1.15;
+}
+
+.sistema-solare__body li {
+  list-style-image: url("../../assets/img/icons8-pianeta-8.png");
+}
+
+.pianeta-container {
+  margin: 20px 0 0;
+  /* [6] ELIMINATA */
+  /* font-size: 0; */
+}
+
+.pianeta-container__card {
+  /* [2] Ho modificato questa per avere tutte le card la stessa larghezza
+  13.333333px è 40px(il margine) diviso 3 (numero di card) */
+  width: calc(33.333333% - 13.333333px);
+  border: 2px solid black;
+  /*  [4] elimino il padding sul contenitore della singola card */
+  /*[4]ELIMINATA padding: 20px 0; */
+
+  /* [6] AGgiunta */
+  float: left;
+  /* [6] ELIMINATA */
+  display: inline-block;
+  /* [1]
+  font-size: 16px; */
+  /* font-size: 1rem; */
+  /* [6] ELIMINATA ISTRUZIONE SOPRA  */
+  margin: 0 10px 20px;
+  cursor: pointer;
+
+  box-shadow: 0 0 2px 1px #14213dff;
+}
+
+article.pianeta-container__card:nth-of-type(3n + 1) {
+  margin-left: 0;
+  /* [2] Tolta la larghezza da qui */
+}
+
+article.pianeta-container__card:nth-of-type(3n) {
+  margin-right: 0;
+  /* [2] Tolta la larghezza da qui */
+}
+
+/* .pianeta-container__card--boundary-left {
+  margin-left: 0;
+  width: calc(33.333333% - 10px);
+} */
+
+/* .pianeta-container__card--boundary-right {
+  margin-right: 0;
+  width: calc(33.333333% - 10px);
+} */
+
+.pianeta-container__card h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.pianeta-container__card p {
+  margin: 0;
+}
+
+/* [4] All'hover sopra un qualunque punto della card rendo la head della card
+corrispondente di un colore diverso. Si verificherà un problema.
+Che parte della head non viene colorata a causa di un padding sul contenitore della 
+singola card.
+Allora in .pianeta-container__card elimino il padding in [4]
+Poi nella head e nel footer della card aggiungo il padding che viene a mancare
+ rispettivamente in .pianeta-container__head e  .pianeta-container__footer */
+
+.pianeta-container__card:hover .pianeta-container__head {
+  background-color: #14213dff;
+  color: #fca311ff;
+}
+
+.pianeta-container__head {
+  /* [4] aggiungo il padding anche sopra.  */
+  /*[4] padding-bottom: 20px; ELIMINATA*/
+  /* [4] AGGIUNTA */
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px ridge black;
+}
+
+.pianeta-container__footer {
+  margin-top: 20px;
+  border-top: 2px ridge black;
+  /* [4] aggiungo il padding anche sotto.  */
+  /*[4] padding-top: 20px; ELIMINATA*/
+  /* [4] AGGIUNTA */
+  padding: 20px 0;
+  text-align: center;
+  color: #14213dff;
+  /* [1]
+  font-size: 20px; */
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+/* [3] Ho reso all'hover il testo dentro il footer 
+    più carino, come un bottone
+    con le due regole sotto. Ho aggiunto anche 
+    un tag span nell'html */
+
+footer.pianeta-container__footer span {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+footer.pianeta-container__footer span:hover {
+  background-color: #14213dff;
+  color: #fca311ff;
+  border-radius: 999px;
+}
+
+.pianeta-container__body {
+  padding: 0 20px;
+}
+
+footer#main-footer {
+  background-color: #fca311ff;
+  color: #14213dff;
+}
+
+div#footer-container {
+  padding: 20px;
+}
+
+dt,
+dd {
+  display: inline-block;
+  margin: 0;
+}
+
+dt {
+  /* [1] Fai vedere perchè questa è meglio definirla in rem 
+  Lascia 150px e metti font-size:20px come unità di base nel tag html 
+  e vedi che succede
+  min-width:150px; */
+  min-width: 9.375rem;
+}
+
+/* [6] AGGIUNTA regola per gestire i float */
+.clearfix {
+  clear: both;
+}

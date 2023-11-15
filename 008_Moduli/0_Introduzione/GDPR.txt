@@ -1,0 +1,36 @@
+GDPR
+
+Se hai dei cookie devi avere un banner
+
+1)Il banner si deve vedere, dimensione adeguata
+2)Tutti i cookie presenti si devono vedere e l'utente deve avere la possibilità 
+di scegliere quali cookie accettare. Solo quelli tecnici sono obbligatori.
+Quelli di facebook, analytics ecc. sono facoltativi
+3)Se l'utente chiude la finestra in automatico vuol dire che accetti solo 
+i cookie strettamente necessari, non puoi in auytomatico attivargli gli altri.
+4)il  bunner, l'informativa deve durare 6 mesi una volta fatta la prima scelta 
+non deve riapparire a meno che non ci siano dei nuovi cookie all'interno del sito.
+
+5)L'utente deve avere la possibilità di ripescare il suo consenso ed andarlo a modificare.
+Cookie preferences.
+
+6)Nel testo del bunner tipicamente gli metti "Accetta" "Preferences" se clicchi preferences
+ti fa vedere tutte le categorie di cookie e di igni categoria tutti i cookie.
+Inoltre DEVI AVERE l'INFORMATIVA PRIVACY POLICY (solo il link) visibile nel bunner
+
+7)Prova del consenso, devo potere dimostrare che l'utente in tale data e a tale ora 
+ha dato il consenso (registro dei consensi cookie).
+E' un elenco di IP che hanno dato o negato il consenso con orario e data.
+
+iubenda è un buon sito per la documentazione legale, anche se non sostituirà mai 
+il lavoro di un legale fisico.
+cookiebot per il banner dei cookie.
+
+Se voglio posso fare anche tutto con iubenda, il problema è che non ti permette di modificare il testo del 
+bunner dei cookie nè di inserire il link con l'informativa sulla privacy e il banner dei cookie si 
+apre ogni volta anzichè ogni 6 mesi
+cookiebot è gratuita per siti fino a 50 pagine.
+
+Link sconto 10% con Iubenda:
+http://iubenda.refr.cc/nicolaciaco1
+
