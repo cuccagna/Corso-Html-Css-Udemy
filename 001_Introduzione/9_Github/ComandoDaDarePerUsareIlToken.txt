@@ -1,0 +1,6 @@
+Nota che devi usare sostituire con il tuo token, il tuo username e il tuo repository
+
+git remote set-url origin https://QUI_METTI_TUO_TOKEN@github.com/nicolaciaco/repositoryProva.git
+
+Anche al posto di nicolaciaco devi mettere il tuo nome utente
+E al posto di repositoryProva devi mettere il nome del tuo repository
